@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+body{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.fondo{
+
+    background-color: thistle;
+    height: 17em;
+
+}
+
+.agregar{
+
+    width: 300px;
+    height: 25px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 4px inset darkgray;
+    text-align: center;
+
+}
+
+.agregar::placeholder{
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2em;
+
+}
+
+.boton{
+
+    border-radius: 15px;
+    width: 150px;
+    height: 25px;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    transition: background-color 0.7s ease;
+    cursor: pointer;
+
+}
+
+.boton:hover{
+
+    background-color: white;
+    color: black;
+    animation: rotar 2s ;
+
+}
+
+h1, form{
+
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+ul{
+
+    list-style-type: none;
+
+}
+
+li{
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+
+}
+
+li:hover{
+
+    text-decoration: line-through;
+    cursor: pointer;
+
+}
+
+.fueraForm{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.lineaSeparar{
+
+    height: 3px;
+    width: 400px;
+    background-color: black;
+    text-align: center;
+
+}
+
+/*Animación de rotar el boton*/
+
+@keyframes rotar{
+
+    0%{
+
+        transform: rotate(0deg);
+
+    }
+
+    25%{
+
+        transform: rotate(30deg);
+
+    }
+
+    50%{
+
+        transform: rotate(-30deg);
+
+    }
+
+    100%{
+
+        transform: rotate(0deg);
+
+    }
+
+}
